@@ -19,6 +19,8 @@
   "homepage": "https://github.com/crisgrego/gdrivenow#readme",
   "dependencies": {
     "google-auth-library": "^0.10.0",
-    "googleapis": "^19.0.0"
+    "googleapis": "^19.0.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
   }
 }

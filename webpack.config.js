@@ -1,6 +1,6 @@
 module.exports = {
   entry: {
-    app: './src/app.js'
+    App: './src/index.js'
   },
   output: {
     filename: '[name].js',
@@ -14,7 +14,10 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['react', 'es2015']
+            presets: [
+              'react',
+              'es2015'
+              ]
           }
         }
       }

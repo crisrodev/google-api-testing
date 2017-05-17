@@ -1,4 +1,4 @@
-import tokens from './controllers/tokens.js'
+import * as tokens from './controllers/tokens.js'
 
 export default {
     "/tokens": {

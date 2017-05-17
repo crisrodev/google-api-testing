@@ -7,6 +7,7 @@ module.exports = function(env){
       filename: '[name].js',
       path: __dirname + '/dist'
     },
+    devtool: env === "dev"? 'inline-source-map': false,
     module: {
       rules: [
         {

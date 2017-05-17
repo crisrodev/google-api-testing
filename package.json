@@ -1,11 +1,12 @@
 {
-  "name": "gdrivenow",
+  "name": "google-api-testing",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-client": "webpack -p --config ./src/client/webpack.config.js",
-    "build-service": "webpack -p --config ./src/service/webpack.config.js",
+    "build-client": "webpack -p --config webpack.client.js",
+    "build-service": "webpack -p --config webpack.service.js",
+    "try":"webpack --env=dev --config webpack.service.js",
     "start-client": "concurrently \"webpack -w --env=dev --config webpack.client.js\" \"python -m SimpleHTTPServer 8000\"",
     "start-service": "concurrently \"webpack --env=dev --config webpack.service.js -w\" \"nodemon --watch dist/gdrivenow-service.js ./dist/gdrivenow-service.js\""
   },
